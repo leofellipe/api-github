@@ -7,7 +7,7 @@ const getDataUser = async (user) => {
       url: `https://api.github.com/users/${user}`
     })
 
-    return response.data
+    return response
   } catch (error) {
     throw error
   }
@@ -15,5 +15,6 @@ const getDataUser = async (user) => {
 }
 
 module.exports = {
-  getDataUser
+  getDataUser,
+  axios
 }
