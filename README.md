@@ -1,1 +1,1 @@
-# api-user-github
+# API para busca de informações no GitHub
