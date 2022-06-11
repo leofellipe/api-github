@@ -11,7 +11,7 @@ const responseRepository = async (req, res) => {
     const data = response.data
     return res.status(200).json({ data })
   } catch (error) {
-    return res.status(400).json({ error, message: error.message })
+    return res.status(400).json({ success: false, message: 'Esse repositório não existe ou é privado, por favor verifique e tente novamente.' })
   }
 
 }

@@ -11,7 +11,7 @@ router.get('/', rpsData)
 router.get('/teste', responseRepository)
 
 router.listen(PORT, () => {
-  console.log(`http://localhost:${PORT}`)
+  console.log(`server hosted on route http://localhost:${PORT}`)
 })
 
 module.exports = {
