@@ -1,6 +1,6 @@
-const { getRepository } = require('../service/repository')
+const { getRepository } = require('../service/getRepository')
 
-const responseRepository = async (req, res) => {
+const dataRepositoryGitHub = async (req, res) => {
   const { owner, repo } = req.body
   try {
     if (!req.body || !req.body.owner || !req.body.repo) {
@@ -18,5 +18,5 @@ const responseRepository = async (req, res) => {
 
 
 module.exports = {
-  responseRepository
+  dataRepositoryGitHub
 }

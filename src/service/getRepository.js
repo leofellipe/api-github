@@ -1,10 +1,10 @@
-const { axios } = require('./getData')
+const { axios } = require('./getUser')
 
 const getRepository = (owner, repo) => {
   try {
     const resRepository = axios({
-      url: `https://api.github.com/repos/${owner}/${repo}`,
-      method: 'GET'
+      method: 'GET',
+      url: `https://api.github.com/repos/${owner}/${repo}`
     })
 
     return resRepository

@@ -1,6 +1,6 @@
-const { getDataUser } = require('../service/getData')
+const { getDataUser } = require('../service/getUser')
 
-const rpsData = async (req, res) => {
+const userDataGitHub = async (req, res) => {
   const { user } = req.body
   try {
     if (!req.body || !req.body.user) {
@@ -17,5 +17,5 @@ const rpsData = async (req, res) => {
 }
 
 module.exports = {
-  rpsData
+  userDataGitHub
 }
